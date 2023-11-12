@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features =  "src/test/resources/features",
         glue = "com/crm/library/step_definitions",
-        tags = "@librarianParam or @studentParam"
+        tags = "@wip"
 )
 public class CukesRunner {
 
