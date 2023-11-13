@@ -12,4 +12,5 @@ public class LandingPage extends PageBase {
 
     @FindBy(id = "user_count")
     public WebElement userCount;
+
 }
