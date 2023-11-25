@@ -5,14 +5,13 @@ Feature: User account tests
   @all_accounts
   Scenario Outline: Verify user information <email>
     Given user on the login page
-    When user login using "<email>" and "<password>"
+    When user enters username "<email>" and enters password "<password>"
     Then account holder name should be "<name>"
 #TEST DATA
     @students
     Examples:
       | email             |  | password |  | name            |
-      | student27@library |  | kkMks02i |  | Test Student 27 |
-      | student28@library |  | 19Ceq2sT |  | Test Student 28 |
-      | student29@library |  | WyIUNpDI |  | Test Student 29 |
+      | student27@library |  | libraryUser |  | Test Student 27 |
+      | student28@library |  | libraryUser |  | Test Student 28 |
+      | student29@library |  | libraryUser |  | Test Student 29 |
 
-    @librarians

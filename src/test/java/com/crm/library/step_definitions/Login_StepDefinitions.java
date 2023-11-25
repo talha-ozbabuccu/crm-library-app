@@ -88,16 +88,18 @@ public class Login_StepDefinitions {
     public void userEntersUsernameAndEnterPasswordAOYKYTMJ(String str1,String str2) {
         loginPage.usernameInput.sendKeys(str1);
         loginPage.passwordInput.sendKeys(str2);
+        loginPage.signInButton.click();
     }
 
     @When("user login using {string} and {string}")
     public void userLoginUsingAnd(String arg0, String arg1) {
+
     }
 
     @Then("account holder name should be {string}")
     public void accountHolderNameShouldBe(String expectedaccountUsername) {
         String actualAccountusername=landingPage.accountUsername.getText();
-        Assert.assertEquals("Account username is not as expecetd!",expectedaccountUsername,actualAccountusername);
+        Assert.assertEquals("Account username is not as expeceted!",expectedaccountUsername,actualAccountusername);
         Driver.closeDriver();
 
     }

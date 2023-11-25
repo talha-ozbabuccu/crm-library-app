@@ -39,6 +39,11 @@ public class ExcelWrite {
         // save/write changes to the workbook
         workbook.write(outputStream);
 
+        //close all
+        outputStream.close();
+        workbook.close();
+        fileInputStream.close();
+
 
     }
 
