@@ -34,6 +34,7 @@ public class Login_StepDefinitions {
     public void dashboard_should_be_displayed() {
         String expected= "dashboard";
         String actual=Driver.getDriver().getCurrentUrl();
+
         Assert.assertTrue(actual.contains(expected));
     }
 
